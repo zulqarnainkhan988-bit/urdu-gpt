@@ -1,0 +1,23 @@
+[build]
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/urdu-chat"
+  to = "/.netlify/functions/urdu-chat"
+  status = 200
+
+[[redirects]]
+  from = "/api/urdu-tts"
+  to = "/.netlify/functions/urdu-tts"
+  status = 200
+
+[[redirects]]
+  from = "/api/urdu-stt"
+  to = "/.netlify/functions/urdu-stt"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
